@@ -40,3 +40,12 @@ def correlation_matrix(sigma4):
 	C=np.dot(YX,np.linalg.inv(XX))
 
 	return C
+
+def emit4d(sigma4):
+	return np.linalg.det(sigma4)**(1.0/4.0)
+
+def eigen_emit(sigma4):
+	w, v = np.linalg.eig(sigma4)
+	return w
+
+
