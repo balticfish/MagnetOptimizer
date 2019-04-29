@@ -48,7 +48,7 @@ def obj_function(qs):  #building the function for minimization
 	q2 = qs[1]
 	q3 = qs[2]
 	sigmaF = RTFB(q1,q2,q3,d2,d3).dot(sigma4).dot(RTFB(q1,q2,q3,d2,d3).T)
-	res = 1.0e6*np.sqrt(sigmaF[0,2]**2 + sigma4[1,2]**2 + sigmaF[0,3]**2 + sigmaF[1,3]**2)
+	res = 1.0e6*np.sqrt(sigmaF[0,2]**2 + sigmaF[1,2]**2 + sigmaF[0,3]**2 + sigmaF[1,3]**2)
 
 	return res
 
